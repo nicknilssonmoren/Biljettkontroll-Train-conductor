@@ -1,0 +1,67 @@
+**Textual Analysis**
+
+Verb: köpa biljett, kolla ålder, kolla pris, sälja biljett, kolla alla passagerare
+
+Substantiv: Enkelbiljett, månadsbiljett, namn, ålder,
+
+Aktör: konduktör (interagera med programmet)
+
+en metod som låter användaren att välja om de vill skriva ut alla passagerare eller sälja en biljett
+en funktion som skriver ut alla passagerare
+en metod som säljer vad för typ av biljett och kollar passagerarens ålder
+
+Att det blir verklighetstroget och anpassar programmet efter hur verkligheten fungerar. Konduktören styr apparaten som säljer biljetter och visar vilka som köpt biljett och är den enda som interagerar med systemet.
+
+Vi har använt oss av private instansvariabler för att vi inte vill att de ska kunna modifieras eller nås utanför klassen. Private static final har vi använt på array listorna så vi slipper skapa ett nytt objekt och kan istället kalla direkt på klassen. Så för varje If sats kan vi kalla direkt på klassen som innehåller metoderna vi behöver.
+
+Variablerna har vi döpt efter vad de innehåller för värde för att göra koden självdokumenterande och enkel att förstå.
+
+Switch funktionen har vi valt att använda för att hoppa in i det kod blocket man vill till direkt och då vi har flera olika case i menyn gör switch funktionen koden enkel att förstå och lätt att anpassa. Vi funderade på att en while loop men kom fram till att de inte hade varit så effektivt eftersom vi inte vet när vårt villkor i while loopen ska förändras. 
+
+Arraylist när vi skrivit in ålder, namn och biljett då vill vi spara undan det på ett ställe där de inte blir överskrivet, och för att lätt lägga till fler resenärer och inte begränsa hur många resenärer som kan sparas. 
+
+Vi har flyttat switchAlt metoden till main eftersom det är det första man vill komma in på. Vi har gjort den static för att kunna kalla på metoden från andra klasser direkt. 
+
+Vi har också flyttat passenger till en helt egen klass som bara hanterar array listor, det som ska läggas in och det som ska visas osv. 
+
+Ticket skickar över värdena till passenger istället för att spara dem direkt i Ticket. 
+
+
+**DAGLOGG**
+
+Torsdag 29/10-2020
+Vi har diskuterat lite lätt hur vi ska bygga vårt program och vad vi behöver tänka på.
+Vi har bestämt oss att alla använda IntelliJ och ett plugin Code with Me för att alla ska kunna se och skriva i samma kod. 
+
+Tisdag 3/11-2020
+Skrivit ner mer detaljerat vad programmet ska innehålla t.ex. kandidater, aktörer och verb. Vad för metoder och funktioner vi tänkt använda. Gjort färdigt UML diagram.
+Suttit som vanligt, delat skärm och skrivit kod gemensamt via Code with Me. 
+Torsdag 5/11- 2020
+Refaktorerat koden och delat metoderna på olika mer lämpliga klasser. 
+Delat skärm och pratat via Discord och diskuterat hur vi ska refaktorera koden.
+
+Tisdag 10/11-2020
+Löste buggen med att skicka över data till Passenger klassen.
+Körde via Code with Me. 
+
+Onsdag 11/11-2020
+Gått igenom redovisning och samlat ihop UML diagram, rapport och kod i ett IntelliJ projekt. Gemensamt i Discord och genom Google Drive.
+
+**FRÅGOR ATT BESVARA**
+
+**På vilket sätt har ni använt er av objektorientering?**
+Vi har både skapat objekt och kallat på klassen direkt utan att skapa objekt.
+Separerat metoderna så att klasserna inte blir för långa. 
+Programmet är behöver inte specifikt vara för tåg utan hade kunnat fungera på t.ex. Flyg eller Båt och är anpassningsbart och skalbart.
+
+**Vilka klasser och metoder har vem haft ansvar för?**
+Vi har tillsammans suttit i Code with Me och Discord under de dagar vi jobbat och haft ett gemensamt ansvar för klasser och metoder.
+
+**Hur har det gått att jobba i grupp?**
+Det har gått bra. 
+
+**Vad det nåt som blev enklare att vara i grupp än att vara själv?**
+Att bolla idéer mellan varandra och kunna diskutera de problem som uppstått. När vi debuggat programmet har det varit mycket enklare att vara i en grupp och ha fler ögon som letar efter felen.
+
+**Vad har ni stött på för svårigheter med att jobba i grupp?**
+Eftersom Code with Me är ett plugit i beta fasen så har det bara varit personen med själva koden som kunnat köra den och mata in värden via konsolen. Vi har också haft lite problem med anslutningen till och från med att vi blivit disconnectade från programmet.
